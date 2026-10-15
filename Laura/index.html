@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Para ti ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         PANTALLA INICIAL
+    ========================================== -->
+
+    <main
+        class="inicio"
+        id="pantallaInicio"
+    >
+
+        <div class="contenido">
+
+            <p class="pequeno">
+                Tengo una pequeña sorpresa para ti...
+            </p>
+
+
+            <div
+                id="corazon"
+                class="corazon"
+            >
+                ❤️
+            </div>
+
+
+            <h1 id="contador">
+                0 / 24
+            </h1>
+
+
+            <p id="mensaje">
+                Toca el corazón
+            </p>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         PANTALLA DEL JARRÓN
+    ========================================== -->
+
+    <main
+        class="pantallaJarron"
+        id="pantallaJarron"
+    >
+
+        <div class="jarronContenido">
+
+
+            <!-- =====================================
+                 TEXTO
+            ====================================== -->
+
+            <div class="textoRecuerdos">
+
+                <h1>
+                    Para que sigan creciendo
+                    <br>
+                    nuevos recuerdos... ❤️
+                </h1>
+
+                <!-- CARTA -->
+                <button
+                    class="botonCarta"
+                    id="botonCarta"
+                    aria-label="Abrir carta"
+                >
+                    ✉️
+                </button>
+
+            </div>
+
+
+
+            <!-- =====================================
+                 JARRÓN
+            ====================================== -->
+
+            <div class="jarron">
+
+
+                <svg
+                    class="vaso-svg"
+                    viewBox="0 0 300 430"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+
+
+                    <!-- =================================
+                         CUERPO DEL JARRÓN
+                    ================================== -->
+
+                    <path
+                        d="
+                            M 105 48
+                            C 105 80, 108 105, 100 125
+                            C 94 140, 70 151, 55 174
+                            C 34 205, 27 247, 30 292
+                            C 33 340, 48 372, 75 385
+                            C 96 396, 204 396, 225 385
+                            C 252 372, 267 340, 270 292
+                            C 273 247, 266 205, 245 174
+                            C 230 151, 206 140, 200 125
+                            C 192 105, 195 80, 195 48
+                            Z
+                        "
+                        fill="#ffffff"
+                        stroke="#d8d8d8"
+                        stroke-width="2.5"
+                        stroke-linejoin="round"
+                    />
+
+
+                    <!-- =================================
+                         INTERIOR DE LA BOCA
+                    ================================== -->
+
+                    <ellipse
+                        cx="150"
+                        cy="48"
+                        rx="38"
+                        ry="7"
+                        fill="#f1f1f1"
+                    />
+
+
+                    <!-- PARTE TRASERA DE LA BOCA -->
+
+                    <path
+                        d="
+                            M 103 48
+                            A 47 12 0 0 1 197 48
+                        "
+                        fill="none"
+                        stroke="#d8d8d8"
+                        stroke-width="2.5"
+                    />
+
+
+
+                    <!-- =================================
+                         TALLOS, HOJAS Y FLORES
+                    ================================== -->
+
+                    <g class="tallos">
+
+
+                        <!-- =================================
+                             TALLO IZQUIERDO
+                        ================================== -->
+
+                        <path
+                            class="tallo tallo1"
+                            d="
+                                M 146 50
+                                C 140 25, 125 -10, 105 -50
+                                C 90 -80, 88 -115, 95 -155
+                            "
+                        />
+
+
+                        <!-- HOJAS IZQUIERDO -->
+
+                        <path
+                            class="hoja hoja1"
+                            d="
+                                M 112 -35
+                                C 92 -48, 78 -45, 70 -30
+                                C 88 -27, 103 -29, 112 -35
+                                Z
+                            "
+                        />
+
+                        <path
+                            class="hoja hoja2"
+                            d="
+                                M 94 -90
+                                C 112 -105, 126 -102, 133 -88
+                                C 117 -82, 103 -83, 94 -90
+                                Z
+                            "
+                        />
+
+
+
+                        <!-- =================================
+                             FLOR IZQUIERDA
+                        ================================== -->
+
+                        <g class="flor flor1">
+
+
+                            <!-- PÉTALO 1 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                            />
+
+
+                            <!-- PÉTALO 2 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                                transform="rotate(60 95 -155)"
+                            />
+
+
+                            <!-- PÉTALO 3 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                                transform="rotate(120 95 -155)"
+                            />
+
+
+                            <!-- PÉTALO 4 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                                transform="rotate(180 95 -155)"
+                            />
+
+
+                            <!-- PÉTALO 5 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                                transform="rotate(240 95 -155)"
+                            />
+
+
+                            <!-- PÉTALO 6 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 95 -155
+                                    C 82 -165, 82 -181, 95 -188
+                                    C 108 -181, 108 -165, 95 -155
+                                    Z
+                                "
+                                transform="rotate(300 95 -155)"
+                            />
+
+
+                            <!-- FOTO 1 -->
+
+                            <defs>
+
+                                <clipPath id="fotoCirculo1">
+
+                                    <circle
+                                        cx="95"
+                                        cy="-155"
+                                        r="15"
+                                    />
+
+                                </clipPath>
+
+                            </defs>
+
+
+                            <image
+                                class="fotoFlor fotoFlor1"
+                                href="multimedia/fotos/foto1.jpg"
+                                x="80"
+                                y="-170"
+                                width="30"
+                                height="30"
+                                preserveAspectRatio="xMidYMid slice"
+                                clip-path="url(#fotoCirculo1)"
+                            />
+
+
+                            <circle
+                                class="bordeFoto"
+                                cx="95"
+                                cy="-155"
+                                r="15"
+                            />
+
+                        </g>
+
+
+
+                        <!-- =================================
+                             TALLO CENTRAL
+                        ================================== -->
+
+                        <path
+                            class="tallo tallo2"
+                            d="
+                                M 150 50
+                                C 150 20, 150 -15, 150 -55
+                                C 150 -100, 150 -140, 150 -180
+                            "
+                        />
+
+
+                        <!-- HOJAS CENTRALES -->
+
+                        <path
+                            class="hoja hoja3"
+                            d="
+                                M 150 -55
+                                C 128 -67, 115 -62, 110 -48
+                                C 127 -46, 141 -49, 150 -55
+                                Z
+                            "
+                        />
+
+                        <path
+                            class="hoja hoja4"
+                            d="
+                                M 150 -105
+                                C 171 -118, 185 -114, 191 -100
+                                C 174 -96, 160 -99, 150 -105
+                                Z
+                            "
+                        />
+
+
+
+                        <!-- =================================
+                             FLOR CENTRAL
+                        ================================== -->
+
+                        <g class="flor flor2">
+
+
+                            <!-- PÉTALO 1 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                            />
+
+
+                            <!-- PÉTALO 2 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                                transform="rotate(60 150 -180)"
+                            />
+
+
+                            <!-- PÉTALO 3 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                                transform="rotate(120 150 -180)"
+                            />
+
+
+                            <!-- PÉTALO 4 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                                transform="rotate(180 150 -180)"
+                            />
+
+
+                            <!-- PÉTALO 5 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                                transform="rotate(240 150 -180)"
+                            />
+
+
+                            <!-- PÉTALO 6 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 150 -180
+                                    C 136 -190, 136 -207, 150 -214
+                                    C 164 -207, 164 -190, 150 -180
+                                    Z
+                                "
+                                transform="rotate(300 150 -180)"
+                            />
+
+
+                            <!-- FOTO 2 -->
+
+                            <defs>
+
+                                <clipPath id="fotoCirculo2">
+
+                                    <circle
+                                        cx="150"
+                                        cy="-180"
+                                        r="17"
+                                    />
+
+                                </clipPath>
+
+                            </defs>
+
+
+                            <image
+                                class="fotoFlor fotoFlor2"
+                                href="multimedia/fotos/foto2.jpg"
+                                x="133"
+                                y="-197"
+                                width="34"
+                                height="34"
+                                preserveAspectRatio="xMidYMid slice"
+                                clip-path="url(#fotoCirculo2)"
+                            />
+
+
+                            <circle
+                                class="bordeFoto"
+                                cx="150"
+                                cy="-180"
+                                r="17"
+                            />
+
+                        </g>
+
+
+
+                        <!-- =================================
+                             TALLO DERECHO
+                        ================================== -->
+
+                        <path
+                            class="tallo tallo3"
+                            d="
+                                M 154 50
+                                C 160 25, 175 -10, 195 -50
+                                C 210 -80, 212 -115, 205 -155
+                            "
+                        />
+
+
+                        <!-- HOJAS DERECHAS -->
+
+                        <path
+                            class="hoja hoja5"
+                            d="
+                                M 188 -35
+                                C 207 -48, 221 -45, 228 -31
+                                C 211 -27, 198 -29, 188 -35
+                                Z
+                            "
+                        />
+
+                        <path
+                            class="hoja hoja6"
+                            d="
+                                M 207 -88
+                                C 190 -102, 176 -99, 170 -85
+                                C 186 -81, 200 -83, 207 -88
+                                Z
+                            "
+                        />
+
+
+
+                        <!-- =================================
+                             FLOR DERECHA
+                        ================================== -->
+
+                        <g class="flor flor3">
+
+
+                            <!-- PÉTALO 1 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                            />
+
+
+                            <!-- PÉTALO 2 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                                transform="rotate(60 205 -155)"
+                            />
+
+
+                            <!-- PÉTALO 3 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                                transform="rotate(120 205 -155)"
+                            />
+
+
+                            <!-- PÉTALO 4 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                                transform="rotate(180 205 -155)"
+                            />
+
+
+                            <!-- PÉTALO 5 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                                transform="rotate(240 205 -155)"
+                            />
+
+
+                            <!-- PÉTALO 6 -->
+
+                            <path
+                                class="petalo"
+                                d="
+                                    M 205 -155
+                                    C 192 -165, 192 -181, 205 -188
+                                    C 218 -181, 218 -165, 205 -155
+                                    Z
+                                "
+                                transform="rotate(300 205 -155)"
+                            />
+
+
+                            <!-- FOTO 3 -->
+
+                            <defs>
+
+                                <clipPath id="fotoCirculo3">
+
+                                    <circle
+                                        cx="205"
+                                        cy="-155"
+                                        r="15"
+                                    />
+
+                                </clipPath>
+
+                            </defs>
+
+
+                            <image
+                                class="fotoFlor fotoFlor3"
+                                href="multimedia/fotos/foto3.jpg"
+                                x="190"
+                                y="-170"
+                                width="30"
+                                height="30"
+                                preserveAspectRatio="xMidYMid slice"
+                                clip-path="url(#fotoCirculo3)"
+                            />
+
+
+                            <circle
+                                class="bordeFoto"
+                                cx="205"
+                                cy="-155"
+                                r="15"
+                            />
+
+                        </g>
+
+
+                    </g>
+
+
+
+                    <!-- =================================
+                         PARTE DELANTERA DE LA BOCA
+                    ================================== -->
+
+                    <path
+                        d="
+                            M 197 48
+                            A 47 12 0 0 1 103 48
+                        "
+                        fill="none"
+                        stroke="#d8d8d8"
+                        stroke-width="2.5"
+                    />
+
+
+                </svg>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         CARTA
+    ========================================== -->
+
+    <div
+        id="cartaOverlay"
+        class="cartaOverlay"
+    >
+
+        <div class="carta">
+
+            <div class="solapaCarta"></div>
+
+            <button
+                id="cerrarCarta"
+                class="cerrarCarta"
+                aria-label="Cerrar carta"
+            >
+                ×
+            </button>
+
+            <div class="cartaInterior">
+
+                
+
+                <p>
+                    Hola, espero que te haya gustado esta pequeña sorpresa. Sé que es algo que seguramente no te esperabas para nada, pero me apetecía hacerte algo diferente y tener un pequeño detalle contigo.
+                    <br><br>
+                    Simplemente quería decirte gracias por estar siempre ahí y por apoyarme en todo. Al final, incluso en los días de mierda, siempre consigues sacarme una sonrisa y hacer que todo sea un poquito mejor.
+                    <br><br>
+                    No hace falta mucho más, simplemente quería que tuvieras este pequeño recuerdo y que supieras que te quiero mucho. ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         VISOR DE FOTOS
+    ========================================== -->
+
+    <div
+        id="visorFoto"
+        class="visorFoto"
+    >
+
+        <div class="contenedorFotoGrande">
+
+            <button
+                id="cerrarFoto"
+                class="cerrarFoto"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="fotoGrande"
+                src=""
+                alt="Recuerdo"
+            />
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <!-- MÚSICA DE FONDO -->
+    <audio id="musicaFondo" preload="auto" loop>
+        <source src="multimedia/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
